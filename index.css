@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 18px Helvetica, Sans-Serif;
+    line-height: 24px;
+}
+
+.no-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.clear { clear: both; }
+.blue {
+    color: #4876FF;
+}
+
+h2 {
+    color: #4876FF;
+    margin-bottom: 4px;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+h4 {
+    margin-top: 8px;
+}
+
+hr {
+    height: 3px;
+    color: #4876FF;
+    background-color: #4876FF;
+}
+
+.contact div {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.left-pane {
+    float: left;
+    max-width: 240px;
+    background-color: #4876FF;
+    float: left;
+    margin: 0 0 0 20px;
+    height: 100%;
+}
+
+.left-pane h1 {
+    line-height: 40px;
+    font-weight: 500;
+    margin: 20px 0 0 14px;
+}
+
+.left-pane .contact {
+    margin-top: 15px;
+}
+
+.left-pane .contact div {
+    margin: 0px 5px 0 14px;
+}
+
+.left-pane .contact div span {
+    margin-left: 5px;
+}
+
+.left-pane .description {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 10px 0 14px;
+    color: white;
+}
+
+.left-pane .skills {
+    color: white;
+    margin: 40px 14px 0 14px;
+}
+
+.left-pane li {
+    list-style: none;
+    color: white;
+    margin-top: 4px;
+}
+
+.right-pane {
+    margin: 76px 80px 0 320px;
+}
+
+.right-pane section {
+    padding-bottom: 30px;
+}
+
+.right-pane li {
+    margin: 8px 0 0 20px;
+}
+
+.right-pane h4 {
+    color: gray;
+    font-weight: 500;
+}
+
+@media print {
+    #header {display:none;}
+    #content {display:none;}
+    #comments {display:none;}
+    #sidebar {display:none;}
+    #footer {display:none;}
+
+    .site-description {display:none;}
+    .site-title {display:none;}
+}
