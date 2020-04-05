@@ -1,0 +1,207 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{enumitem}
+%% \setlist{itemize}[itemsep=12pt]}
+  \setlist{itemsep=10pt}
+%% \begin{itemize}[topsep=8pt,itemsep=4pt,partopsep=4pt, parsep=4pt]
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+%% \setlength{\parskip}{1cm plus 4mm minus 3mm}
+%% \setlength{\itemsep}{1cm plus 4mm minus 3mm}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{10pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://travisjefferson.com/}{\Large Travis Jefferson}} & Email : \href{mailto:traviscjefferson@gmail.com}{traviscjefferson@gmail.com}\\
+  \href{https://github.com/tjefferson08}{https://github.com/tjefferson08} & Mobile : +1-219-241-3099 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Purdue University}{West Lafayette, IN}
+      {Bachelor of Engineering in Computer Engineering}{August 2009 -- May 2014}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {Sharethrough}{Austin, TX and Remote}
+        {Staff Engineer}{January 2019 - present}
+        \resumeItemListStart
+        \resumeItem
+            {ReactJS}
+            {In-place migration of large sales-facing (AngularJS) app to ReactJS}
+
+        \resumeItem
+            {Rails}
+            {Typical Rails development/deployment/maintenance across 4 major rails applications}
+
+        \resumeItem
+            {Front-end Testing}
+            {Introduce modern ReactJS testing practices, @testing-library/react}
+
+        \resumeItem
+            {ETL}
+            {Author, maintain, and monitor set of Airflow ETL scripts for consumption by Rails reporting app}
+
+         \resumeItem
+            {DevOps, AWS, Terraform}
+            {Maintenance, provisioning, and deployment for team's AWS resources}
+            \resumeItemListEnd
+
+        \resumeSubSubheading
+            {Senior Software Engineer}{July 2017 - January 2019}
+            \resumeItemListStart
+            \resumeItem
+                {Javascript}
+                {Ground-up rewrite of publisher-integration JS library with Typescript and PreactJS}
+            \resumeItem
+                {Rails}
+                {Implementation of federated users service with Rails engine and Auth0 gem}
+                \resumeItemListEnd
+
+        \resumeSubSubheading
+            {Software Engineer}{September 2016 - July 2017}
+            \resumeItemListStart
+            \resumeItem
+                {Third Party APIs}
+                {Replicate central advertising models over the network to The Trade Desk via their API}
+                \resumeItemListEnd
+
+    \resumeSubheading
+        {Signpost}
+        {Austin, TX}
+        {Software Engineer}{May 2014 - September 2016}
+        \resumeItemListStart
+        \resumeItem
+            {ExpressJS}
+            {Author Express.js routers/middleware to meet business/tech needs including custom subdomains, authorization, and common DB queries}
+        \resumeItem
+            {HTML/CSS}
+            {Hand-code HTML (Jade/Pug), CSS (Sass), and front-end JavaScript (jQuery) to implement a responsive, cross-browser landing page design for the merchant-facing dashboard app}
+       \resumeItemListEnd
+
+    \resumeSubheading
+        {Purdue University}{West Lafayette, IN}
+        {Research Assistant}{May 2013 - May 2014}
+        \resumeItemListStart
+
+        \resumeItem
+            {Microcrontrollers}
+            {Deploy software for TI MSP 430 microcontroller to relay sensor data over RF}
+
+        \resumeItem
+            {VB.NET}
+            {Author VB.NET client application to receive post-processed sensor data}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+          {GE Aviation Systems}{Grand Rapids, MI}
+          {Engineering Intern}{5 distinct internships}
+          \resumeItemListStart
+          \resumeItem
+              {Internships}
+              {Various software and systems internship projects of 5 rotations throughout undergraduate tenure}
+              \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+%% \section{Projects}
+%%   \resumeSubHeadingListStart
+%%     \resumeSubItem{Project Name}
+%%       {Project description}
+%%   \resumeSubHeadingListEnd
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: Javascript, Rails, Ruby, NodeJS, SQL}
+   }
+   \item{
+     \textbf{Technologies}{: AWS, ReactJS, React, Terraform, Sidekiq}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

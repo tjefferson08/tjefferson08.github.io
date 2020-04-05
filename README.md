@@ -11,5 +11,5 @@ sudo tlmgr install <pkg>
 
 # Where <pkg> is something out of the .tex file \usepackage directives
 
-pdflatex ./tjefferson_resume.tex
+pdflatex -output-directory pdfs/ ./tjefferson_resume.tex
 ```
