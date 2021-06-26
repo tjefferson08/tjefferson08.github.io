@@ -71,7 +71,7 @@
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{5pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{10pt}}
 
@@ -88,22 +88,26 @@
 \end{tabular*}
 
 
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Purdue University}{West Lafayette, IN}
-      {Bachelor of Engineering in Computer Engineering}{August 2009 -- May 2014}
-  \resumeSubHeadingListEnd
-
-
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
+    \resumeSubheading
+        {Pathstream}{Remote}
+        {L4 Engineer}{May 2020 - Present}
+        \resumeItemListStart
+        \resumeItem
+            {Terraform, VPC/Routing}
+            {Transition of critical infrastructure into TF}
+            {Consolidation of application services underneath shared routing layer}
+
+        \resumeItem
+            {Rails, ReactJS}
+            {Refactor toward coherent application modeling in rails APIs, simplify intricate JS data fetching system}
+       \resumeItemListEnd
 
     \resumeSubheading
         {Sharethrough}{Austin, TX and Remote}
-        {Staff Engineer}{January 2019 - present}
+        {Staff Engineer}{January 2019 - May 2020}
         \resumeItemListStart
         \resumeItem
             {ReactJS}
@@ -132,19 +136,15 @@
             \resumeItem
                 {Javascript}
                 {Ground-up rewrite of publisher-integration JS library with Typescript and PreactJS}
-            \resumeItem
-                {Rails}
-                {Implementation of federated users service with Rails engine and Auth0 gem}
-                \resumeItemListEnd
+            \resumeItemListEnd
 
         \resumeSubSubheading
             {Software Engineer}{September 2016 - July 2017}
             \resumeItemListStart
             \resumeItem
                 {Third Party APIs}
-                {Replicate central advertising models over the network to The Trade Desk via their API}
+                {Replicate core advertising models over vendor's HTTP API (The Trade Desk)}
                 \resumeItemListEnd
-
     \resumeSubheading
         {Signpost}
         {Austin, TX}
@@ -152,7 +152,7 @@
         \resumeItemListStart
         \resumeItem
             {ExpressJS}
-            {Author Express.js routers/middleware to meet business/tech needs including custom subdomains, authorization, and common DB queries}
+            {Author ExpressJS routers/middleware: including custom subdomain logic, authorization, and common DB queries}
         \resumeItem
             {HTML/CSS}
             {Hand-code HTML (Jade/Pug), CSS (Sass), and front-end JavaScript (jQuery) to implement a responsive, cross-browser landing page design for the merchant-facing dashboard app}
@@ -161,26 +161,14 @@
     \resumeSubheading
         {Purdue University}{West Lafayette, IN}
         {Research Assistant}{May 2013 - May 2014}
-        \resumeItemListStart
+  \resumeSubHeadingListEnd
 
-        \resumeItem
-            {Microcontrollers}
-            {Deploy software for TI MSP 430 microcontroller to relay sensor data over RF}
-
-        \resumeItem
-            {VB.NET}
-            {Author VB.NET client application to receive post-processed sensor data}
-
-      \resumeItemListEnd
-
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
     \resumeSubheading
-          {GE Aviation Systems}{Grand Rapids, MI}
-          {Engineering Intern}{5 distinct internships}
-          \resumeItemListStart
-          \resumeItem
-              {Internships}
-              {Various software and systems internship projects of 5 rotations throughout undergraduate tenure}
-              \resumeItemListEnd
+      {Purdue University}{West Lafayette, IN}
+      {Bachelor of Engineering in Computer Engineering}{August 2009 -- May 2014}
   \resumeSubHeadingListEnd
 
 
@@ -198,7 +186,7 @@
      \textbf{Languages}{: Javascript, Rails, Ruby, NodeJS, SQL}
    }
    \item{
-     \textbf{Technologies}{: AWS, ReactJS, React, Terraform, Sidekiq}
+     \textbf{Technologies}{: AWS, CI/CD, Postgres, ReactJS, Terraform, Sidekiq}
    }
  \resumeSubHeadingListEnd
 
