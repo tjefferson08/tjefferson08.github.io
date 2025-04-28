@@ -71,9 +71,10 @@
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{5pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{1pt}}
+\newcommand{\resumeSubHeadingEnd}{\end{itemize}\vspace{5pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{10pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -92,13 +93,34 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
+        {Merit America}{Remote}
+        {Senior Software Engineer}{March 2022 - Present}
+        \resumeItemListStart
+        \resumeItem
+            {Rails, TailwindCSS, StimulusJS, Turbo}
+            {Greenfield Rails application development on Heroku infrastructure}
+
+        \resumeItem
+            {OpenTelemetry, Observability}
+            {Deep integration with OpenTelemetry instrumentation (SDK/collector) with Honeycomb dashboards and triggers}
+
+        \resumeItem
+            {ActiveJob}
+            {Extension of ActiveJob to improve job observability: outcome/retry/performance instrumentation}
+
+        \resumeItem
+            {Background Jobs}
+            {Establish standards for well-designed job architecture: latency SLAs, retries, durable queue integration, error alerting}
+
+       \resumeItemListEnd
+
+    \resumeSubheading
         {Pathstream}{Remote}
-        {L4 Engineer}{May 2020 - Present}
+        {L4 Engineer}{May 2020 - October 2021}
         \resumeItemListStart
         \resumeItem
             {Terraform, VPC/Routing}
-            {Transition of critical infrastructure into TF}
-            {Consolidation of application services underneath shared routing layer}
+            {Transition of critical infrastructure into TF, consolidation of application services underneath shared routing layer}
 
         \resumeItem
             {Rails, ReactJS}
@@ -120,10 +142,6 @@
         \resumeItem
             {Front-end Testing}
             {Introduce modern ReactJS testing practices, @testing-library/react}
-
-        \resumeItem
-            {ETL}
-            {Author, maintain, and monitor set of Airflow ETL scripts for consumption by Rails reporting app}
 
          \resumeItem
             {DevOps, AWS, Terraform}
@@ -158,9 +176,6 @@
             {Hand-code HTML (Jade/Pug), CSS (Sass), and front-end JavaScript (jQuery) to implement a responsive, cross-browser landing page design for the merchant-facing dashboard app}
        \resumeItemListEnd
 
-    \resumeSubheading
-        {GE Aviation Systems}{Grand Rapids, MI}
-        {Systems/Software Engineering Intern}{5 distinct internships}
   \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
@@ -183,10 +198,10 @@
 \section{Programming Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Javascript, Rails, Ruby, NodeJS, SQL}
+     \textbf{Languages}{: Ruby, Javascript, NodeJS, SQL}
    }
    \item{
-     \textbf{Technologies}{: AWS, CI/CD, Postgres, ReactJS, Terraform, Sidekiq}
+     \textbf{Technologies}{: Rails, AWS, CI/CD, Postgres, ReactJS, Terraform, Sidekiq}
    }
  \resumeSubHeadingListEnd
 
